@@ -2,7 +2,7 @@
 
 function waitFor(element, eventName) {
   return new Promise((resolve, reject) => {
-    const handler = (even) => {
+    const handler = (elem) => {
       element.removeEventListener(eventName, handler);
 
       resolve(
